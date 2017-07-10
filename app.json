@@ -1,0 +1,11 @@
+{
+    "name": "Weather Station API",
+    "description": "",
+    "repository": "https://github.com/efreiberg/weather-station-api",
+    "env": {
+        "NODE_ENV": {
+            "description": "Express Env Variable",
+            "value": "development"
+        }
+    }
+}
