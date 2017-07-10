@@ -19,8 +19,5 @@
             "/lux": "luxmeter"
         },
         "prefix": "/api/v1"
-    },
-    "express": {
-        "port": "3000"
     }
 }
