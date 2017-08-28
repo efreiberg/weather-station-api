@@ -1,0 +1,11 @@
+{
+    "db": {
+        "index": "time",
+        "url": "localhost",
+        "table": "weather-station-testing-weather-data"
+    },
+    "aws": {
+        "region": "us-east-1",
+        "user": "AKIAILI4X4FMKPZNVOCQ"
+    }
+}

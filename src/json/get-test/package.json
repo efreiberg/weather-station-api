@@ -1,6 +1,0 @@
-{
-  "name": "weather-station-get-test",
-  "dependencies": {
-    "@architect/functions": "^1.3.0"
-  }
-}

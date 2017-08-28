@@ -5,7 +5,13 @@ weather-station
 get /
 
 @json
-get /lux
-get /humidity
-get /temperature
-get /test
+get /weather-data
+post /weather-data
+
+@tables
+weather-data
+  _id *String
+
+@indexes
+weather-data
+  time *Number

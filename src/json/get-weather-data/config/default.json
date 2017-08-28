@@ -1,0 +1,9 @@
+{
+    "db": {
+        "index": "time-index"
+    },
+    "aws": {
+        "region": "us-east-1",
+        "user": "AKIAILI4X4FMKPZNVOCQ"
+    }
+}
