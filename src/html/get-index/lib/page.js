@@ -6,7 +6,7 @@ module.exports = function (callback) {
             callback(null, getPage({ body: 'Error Fetching Data. My bad.' }))
         }
         else {
-            callback(null, getPage({ body: getDataBody(data.items[0] || {}) }))
+            callback(null, getPage({ body: getDataBody(data.items[0] || null) }))
         }
     })
 }
@@ -45,6 +45,12 @@ var style =
             font-size: 30px;
             text-align: center;
         }
+
+        .no-data{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 100px;
+        }
     `
 var getPage = function (config) {
     return `
@@ -58,6 +64,9 @@ var getPage = function (config) {
 }
 
 var getDataBody = function (data) {
+    if (!data) {
+        return `<div class="no-data">No Data!</div>`
+    }
     var temp = (data.temp || {}).ambient,
         pressure = (data.barometer || {}).pressure,
         humidity = (data.humidity || {}).humidity,
@@ -69,7 +78,7 @@ var getDataBody = function (data) {
     return `
         <div class="data-container">
             <div class="temp-container">
-                ${temp}&deg;
+                ${temp || ''}&deg;
             </div>
             <div class="pressure-container">
                 ${pressure} mBar
