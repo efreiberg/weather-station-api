@@ -8,10 +8,13 @@ module.exports = function (callback) {
     request({
         uri: url,
         json: true,
-        method: 'GET'
+        method: 'GET',
+        qs: {
+            limit: 1
+        }
     }, function (error, response, body) {
-        if(err){
-            callback(err);
+        if(error){
+            callback(error);
         }
         else {
             callback(null, body);

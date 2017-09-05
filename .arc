@@ -10,8 +10,5 @@ post /weather-data
 
 @tables
 weather-data
-  _id *String
-
-@indexes
-weather-data
-  time *Number
+  deviceId *String
+  time **Number  

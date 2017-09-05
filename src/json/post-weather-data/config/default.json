@@ -1,6 +1,5 @@
 {
     "db": {
-        "index": "time",
         "url": "localhost",
         "table": "weather-station-testing-weather-data"
     },
