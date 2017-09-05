@@ -1,0 +1,6 @@
+{
+    "db": {
+        "url": "https://dynamodb.us-east-1.amazonaws.com",
+        "table": "weather-station-staging-weather-data"
+    }
+}

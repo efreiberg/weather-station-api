@@ -1,0 +1,8 @@
+{
+  "name": "weather-station-post-weather-data",
+  "dependencies": {
+    "@architect/functions": "^1.4.1",
+    "config": "^1.26.2",
+    "aws-sdk": "^2.104.0"
+  }
+}
